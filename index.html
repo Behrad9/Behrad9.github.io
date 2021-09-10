@@ -8,19 +8,25 @@
       @import url('https://v1.fontapi.ir/css/Mitra:400');
       @import url('https://v1.fontapi.ir/css/Titr:400');
       @import url('https://v1.fontapi.ir/css/Roya:700');
-      @import url('https://v1.fontapi.ir/css/SamimFD:400');
       @import url('https://v1.fontapi.ir/css/SahelFD:300');
-      @import url('https://v1.fontapi.ir/css/ParastooFD:400');
       
       #d0 {height:1220px; width:918px; margin-right:auto; margin-left:auto}
       
       #d1 {background-color:#F0AA25; height:1220px; width:330px; transform:translate(178%);}
           
-      .image {width:200px; height:200px; object-fit:cover; border-radius:50%; top:20px; right:64px; position:absolute}
+      .image {width:200px; height:200px; object-fit:cover; border-radius:50%; top:20px; right:64px; position:absolute; animation-duration: 2s; animation-name:imageEnterance}
       
-      #d2 {height:30px; width:330px; padding-top:225px; font-size:40px; text-align:center; font-family:'Titr',tahoma}
+      .image:hover{animation-name:imageTwinkle; animation-iteration-count:infinite; animation-duration: 2s}
       
-      #d3 {background-color:black; color:#F0AA25; position:absolute; height:60px; width:330px; right:0; top:305px; font-size:24px; text-align:center; font-family:'Mitra',tahoma; line-height:250%}
+      
+      @keyframes imageEnterance {0% {transform:scale(0.5); opacity:0}}
+      @keyframes imageTwinkle {50% {transform:scale(0.5); opacity:0.5}}
+      
+      #d2 {height:30px; width:330px; padding-top:225px; font-size:44px; text-align:center; font-family:'Roya',tahoma; animation-duration: 2s; animation-name:nameEnterance}
+      
+      @keyframes nameEnterance {0% {opacity:0; transform:translateX(100px);}}
+      
+      #d3 {background-color:black; color:#F0AA25; position:absolute; height:60px; width:330px; right:0; top:305px; font-size:26px; text-align:center; font-family:'Mitra',tahoma; line-height:250%}
       
       #d4 {position:absolute; width:165px; right:10px; top:378px; font-size:23px; text-align:right; font-family:'Mitra',tahoma; line-height:1.55; padding-right:10px}
       
@@ -86,7 +92,9 @@
       
       #d34 {position:absolute; width:189px; top:498px; right:560px; font-size:18px; text-align:right; font-family:'Sahel FD',tahoma; line-height:1.6; padding-right:10px; direction:rtl}
       
-      #d35 {position:absolute; width:189px; top:498px; right:782px; font-size:18px; text-align:right; font-family:'Sahel FD',tahoma; line-height:1.6; padding-right:10px; direction:rtl}
+      #d35 {position:absolute; width:189px; top:498px; right:745px; font-size:18px; text-align:right; font-family:'Sahel FD',tahoma; line-height:1.6; padding-right:10px; direction:rtl}
+      
+      .imageZNU {position:absolute; height:110px; top:457px; right:836px; object-fit:cover;}
       
       #d36 {background-color:#363636; color:white; position:absolute; height:40px; width:569px; top:538px; right:338px; font-size:25px; text-align:right; font-family:'Titr',tahoma; line-height:1.8; padding-right:10px}
       
@@ -101,6 +109,8 @@
       #d41 {position:absolute; width:189px; top:690px; right:338px; font-size:22px; text-align:right; font-family:'Mitra',tahoma; line-height:1.2; padding-right:10px; direction:rtl}
       
       #d42 {position:absolute; width:189px; top:690px; right:560px; font-size:18px; text-align:right; font-family:'Sahel FD',tahoma; line-height:1.6; padding-right:10px; direction:rtl}
+      
+      .imageIranArgham {background-color:green; position:absolute; width:135px; top:675px; right:782px; object-fit:cover}
       
       #d43 {background-color:#363636; color:white; position:absolute; height:40px; width:569px; top:730px; right:338px; font-size:25px; text-align:right; font-family:'Titr',tahoma; line-height:1.8; padding-right:10px}
       
@@ -152,7 +162,7 @@
         <div id="d1">
             <img id="Behrad" src="https://s4.uupload.ir/files/behrad_wc9m.bmp" class="image" />
             <div id="d2">بهراد حاج میری</div>
-            <div id="d3">(software developer) برنامه نویس</div>
+            <div id="d3">(Software Developer) برنامه نویس</div>
             <div id="d4">
 سال تولد</br>
 ایمیل</br>
@@ -222,6 +232,7 @@
             <div id="d33">دانشگاه زنجان</div>
             <div id="d34">1389 تا 1393</div>
             <div id="d35">معدل: 16/06</div>
+            <a href="http://www.znu.ac.ir/" target="_blank"><img src="https://myreshte.ir/university/imgLogo/dd9bea7ba81c4986b0df9f324f8d15d4.png" class="imageZNU" /></a>
             <div id="d36">سوابق کاری</div>
             <div id="d37">تعمیرات نرم‌افزاری و سخت‌افزاری موبایل</div>
             <div id="d38">موبایل سعید</div>
@@ -229,8 +240,9 @@
             <div id="d40">کارشناسی فنی پشتیبانی خودپرداز و تجهیزات بانکی</div>
             <div id="d41">شرکت ایران ارقام</div>
             <div id="d42">1394 تا 1399</div>
+            <a href="https://www.iranargham.com/" target="_blank"><img src="https://www.iranargham.com/template/default/fa/img/logo.svg" class="imageIranArgham" /></a>
             <div id="d43">پروژه ها</div>
-            <div id="d44">کنترل و ارتباط با تابلو روان از راه دور از طریق ماژول  gsm</div>
+            <div id="d44">کنترل و ارتباط با تابلو روان از راه دور از طریق ماژول  GSM</div>
             <div id="d45">پروژه کارشناسی</div>
             <div id="d46">1393</div>
             <div id="d47">مدارک و گواهینامه ها</div>
