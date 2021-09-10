@@ -13,19 +13,19 @@
       
       #d0 {height:1220px; width:918px; margin-right:auto; margin-left:auto}
       
-      #d1 {background-color:#F0AA25; height:1220px; width:330px; transform:translate(178%);}
+      #d1 {background-color:#F0AA25; height:1220px; width:330px; transform:translate(178%)}
           
-      .imageBehrad {width:200px; height:200px; object-fit:cover; border-radius:50%; top:20px; right:64px; position:absolute; animation-duration: 2s; animation-name:imageEnterance}
+      .imageBehrad {width:200px; height:200px; object-fit:cover; border-radius:50%; top:20px; right:64px; position:absolute; animation:imageEnterance 2s}
       
-      .imageBehrad:hover{animation-name:imageTwinkle; animation-iteration-count:infinite; animation-duration: 2s}
+      .imageBehrad:hover{animation:imageTwinkle 2s infinite}
       
       @keyframes imageEnterance {0% {transform:scale(0.5); opacity:0}}
       
       @keyframes imageTwinkle {50% {transform:scale(0.5); opacity:0.5}}
       
-      #d2 {height:30px; width:330px; padding-top:225px; font-size:44px; text-align:center; font-family:'Roya',tahoma; animation-duration: 2s; animation-name:nameEnterance}
+      #d2 {height:30px; width:330px; padding-top:225px; font-size:44px; text-align:center; font-family:'Roya',tahoma; animation:nameEnterance 2s}
       
-      @keyframes nameEnterance {0% {opacity:0; transform:translateX(-60px);}}
+      @keyframes nameEnterance {0% {opacity:0; transform:translateX(-60px)}}
       
       #d3 {background-color:black; color:#F0AA25; position:absolute; height:60px; width:330px; right:0; top:305px; font-size:26px; text-align:center; font-family:'Mitra',tahoma; line-height:250%}
       
@@ -83,7 +83,11 @@
       
       #d29 {background-color:#363636; color:white; position:absolute; height:40px; width:569px; top:0; right:338px; font-size:25px; text-align:right; font-family:'Titr',tahoma; line-height:1.8; padding-right:10px}
       
-      #d30 {position:absolute; width:569px; top:45px; right:338px; font-size:22px; text-align:right; font-family:'Mitra',tahoma; line-height:1.2; padding-right:10px; direction:rtl;}
+      #d30 {position:absolute; width:569px; top:45px; right:338px; font-size:22px; text-align:right; font-family:'Mitra',tahoma; line-height:1.2; padding-right:10px; direction:rtl}
+      
+      .imageSampad {position:absolute; height:70px; top:100px; right:840px; object-fit:cover; animation:bellSampad .5s linear infinite}
+      
+      @keyframes bellSampad {0% {transform:rotate(10deg)} 50% {transform:rotate(-10deg)} 100% {transform:rotate(10deg)}}
       
       .imageDeveloper {position:absolute; height:120px; top:200px; right:600px; object-fit:cover}
       
@@ -236,6 +240,7 @@
 - ورزش منظم به ویژه دوچرخه سواری و کوهنوردی</br>
 - نوازنده کمانچه و علاقه مند به هنر و ادبیات</br>
             </div>
+            <img src='Sampad.jpg' class="imageSampad" />
             <img src='Developer.gif' class="imageDeveloper" />
             <img src='Biking.gif' class="imageBiking" />
             <div id="d31">سوابق تحصیلی</div>
