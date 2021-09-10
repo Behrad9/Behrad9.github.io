@@ -85,9 +85,11 @@
       
       #d30 {position:absolute; width:569px; top:45px; right:338px; font-size:22px; text-align:right; font-family:'Mitra',tahoma; line-height:1.2; padding-right:10px; direction:rtl}
       
-      .imageSampad {position:absolute; height:70px; top:100px; right:840px; object-fit:cover; animation:bellSampad .5s linear infinite}
+      @keyframes bell {0% {transform:rotate(5deg)} 50% {transform:rotate(-5deg)} 100% {transform:rotate(5deg)}}
       
-      @keyframes bellSampad {0% {transform:rotate(10deg)} 50% {transform:rotate(-10deg)} 100% {transform:rotate(10deg)}}
+      .imageSampad {position:absolute; height:70px; top:100px; right:840px; object-fit:cover}
+      
+      .imageSampad:hover {animation:bell .5s linear infinite}
       
       .imageATM {position:absolute; height:100px; top:200px; right:800px; object-fit:cover}
       
@@ -106,6 +108,7 @@
       #d35 {position:absolute; width:189px; top:498px; right:745px; font-size:18px; text-align:right; font-family:'Sahel FD',tahoma; line-height:1.6; padding-right:10px; direction:rtl}
       
       .imageZNU {position:absolute; height:80px; top:457px; right:845px; object-fit:cover}
+      .imageZNU:hover {animation:bell .5s linear infinite}
       
       #d36 {background-color:#363636; color:white; position:absolute; height:40px; width:569px; top:538px; right:338px; font-size:25px; text-align:right; font-family:'Titr',tahoma; line-height:1.8; padding-right:10px}
       
@@ -124,6 +127,7 @@
       #d42 {position:absolute; width:189px; top:690px; right:560px; font-size:18px; text-align:right; font-family:'Sahel FD',tahoma; line-height:1.6; padding-right:10px; direction:rtl}
       
       .imageIranArgham {position:absolute; width:145px; top:675px; right:773px; object-fit:cover}
+      .imageIranArgham:hover {animation:bell .5s linear infinite}
       
       #d43 {background-color:#363636; color:white; position:absolute; height:40px; width:569px; top:730px; right:338px; font-size:25px; text-align:right; font-family:'Titr',tahoma; line-height:1.8; padding-right:10px}
       
@@ -156,6 +160,7 @@
       #d56 {position:absolute; width:189px; top:1053px; right:560px; font-size:18px; text-align:right; font-family:'Sahel FD',tahoma; line-height:1.6; padding-right:10px; direction:rtl}
       
       .imageFanniHerfei {position:absolute; height:120px; top:920px; right:770px; object-fit:cover}
+      .imageFanniHerfei:hover {animation:bell .5s linear infinite}
       
       #d57 {position:absolute; width:569px; top:1093px; right:338px; font-size:22px; text-align:right; font-family:'Roya',tahoma; line-height:1.2; padding-right:10px; direction:rtl}
       
@@ -244,7 +249,7 @@
 - ورزش منظم به ویژه دوچرخه سواری و کوهنوردی</br>
 - نوازنده کمانچه و علاقه مند به هنر و ادبیات</br>
             </div>
-            <img src='Sampad.jpg' class="imageSampad" />
+            <a href="https://sampad.gov.ir/" target="_blank"><img src='Sampad.jpg' class="imageSampad" /></a>
             <img src='ATM.png' class="imageATM" />
             <img src='Developer.gif' class="imageDeveloper" />
             <img src='Biking.gif' class="imageBiking" />
